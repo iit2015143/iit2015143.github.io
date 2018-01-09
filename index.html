@@ -56,7 +56,7 @@
 
 		function small(){
 
-			//got it what is happening here this recursion goes on exponentially
+			//got it what was happening here this recursion goes on exponentially
 			//each calls another four.
 
 			//console.log(this);
@@ -74,7 +74,7 @@
 		}
 
 		$(document).ready(function(e){
-			$(".button").animate({padding:'30px'},"slow",small);
+			//$(".button").animate({padding:'30px'},"slow",small);
 			$(".button").on('click',function(e){
 				var button = this.childNodes[0].nodeValue;
 				button += (this.className == "button on")? "/0" : "/1";
