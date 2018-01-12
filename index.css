@@ -89,6 +89,7 @@ article{
     margin:20px;
     box-shadow: -5px 5px 5px #222222;
     padding-bottom:80px;
+    word-wrap: break-word;
 }
 
 footer{
@@ -97,6 +98,7 @@ footer{
     /*background: linear-gradient(90deg,#fff,#015907);*/
     margin:20px;
     font-size:0px;
+    box-shadow: -5px 5px 5px #222222;
 }
 
 footer section{
@@ -106,6 +108,7 @@ footer section{
     display: inline-block;
     border-left:2px dashed white;
     border-left-style:dashed;
+    box-shadow: -5px 5px 5px #222222;
 }
 
 /* responsive to phones here */
