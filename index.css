@@ -32,7 +32,7 @@ h1 span{
 p{
     color:white;
     padding:1% 10% 0% 10%;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 a{
@@ -78,7 +78,7 @@ nav ul a li{
 
 nav ul li:hover{
     color:white;
-    background-color: black;
+    background-color: rgba(0,0,0,0.9);
 }
 
 article{
@@ -103,22 +103,32 @@ footer{
 
 footer section{
     font-size:16px;
-    padding:40px;
+    padding:20px 0px 20px 0px;
     width:33.33%;
     display: inline-block;
     border-left:2px dashed white;
     border-left-style:dashed;
     box-shadow: -5px 5px 5px #222222;
+    text-align: center;
 }
 
 /* responsive to phones here */
 
 /* Landscape phones and down */
+@media (max-width:1000px){
+    header{
+        background-image: url("mobilebg.jpg");
+    }
+}
+
 @media (max-width: 480px) {
     nav ul a li{
         display: block;
         width:100%;
         border-bottom:1px solid #dee2de;
+    }
+    header{
+        background-image: url("mobilebg.jpg");
     }
     footer section{
         display: block;
