@@ -112,9 +112,13 @@ footer section{
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    nav ul li{
+    nav ul a li{
         display: block;
         width:100%;
-        border-bottom:1px solid #222322;
+        border-bottom:1px solid #dee2de;
+    }
+    footer section{
+        display: block;
+        width:100%;
     }
 }
