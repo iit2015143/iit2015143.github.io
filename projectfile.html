@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ESP8266</title>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			body{
+				/*background-image:url('bg1.jpeg');*/
+				background-color:#99ff99;
+				border: 40px solid #cc99ff;
+
+			}
+			h1{
+				margin:10px;
+				padding:10px;
+				background-image:url('f1.jpg');
+				color:white;
+				text-align: center;
+				border: 5px solid #8c1aff;
+				border-radius:10px;
+			}
+			p{
+				margin:10px;
+				padding:10px;
+				text-align: center;
+			}
+			.off{
+				display:inline-block;
+				width:100px;
+				height:100px;
+				margin:5%;
+				border-radius:50%;
+				padding:20px;
+				background-color: red;
+				color:white;
+				font-size:18px;
+			}
+			.on{
+				display:inline-block;
+				width:100px;
+				height:100px;
+				margin:5%;
+				border-radius:50%;
+				padding:20px;
+				background-color: green;
+				color:white;
+				font-size:18px;
+			}
+			span{
+				background-color:#cc99ff;
+				padding:10px;
+			}
+			img{
+				max-width:75%;
+				height:auto;
+			}
+		</style>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+
+		function small(){
+
+			//got it what was happening here this recursion goes on exponentially
+			//each calls another four.
+
+			//console.log(this);
+			$(this).animate({padding:'10px'},"slow",big);
+			//$(this).hide(1000);
+			//console.log("i am called: small");
+		}
+
+		function big(){
+			//$(".button").clearQueue();
+			//console.log(this);
+			$(this).animate({padding:'30px'},"slow",small);
+			//$(this).hide(1000);
+			//console.log("i am called: big");
+		}
+
+		$(document).ready(function(e){
+			//$(".button").animate({padding:'30px'},"slow",small);
+			$(".button").on('click',function(e){
+				var button = this.childNodes[0].nodeValue;
+				button += (this.className == "button on")? "/0" : "/1";
+				console.log(button);
+				var changemyclassname = this;
+				$.ajax({
+					url: button,
+					cache: false,
+					success : function(data){
+						console.log(data);
+						console.log(changemyclassname);
+
+						if(data=="low"){
+							changemyclassname.className = "button off";
+						}
+						else
+							changemyclassname.className = "button on";
+					}
+				});
+				console.log("Someone clicked");
+			});
+		});
+
+		</script>
+	</head>
+	<body>
+		<h1>Operate Esp8266 now with ease and motherfucker</h1>
+		<p>
+			<span><button class ="button on">gpio2</button></span>
+			<span><button class ="button on">gpio3</button></span>
+			<span><button class ="button on">gpio4</button></span>
+			<span><button class ="button on">gpio5</button></span>
+		</p>
+		<p><img src="f1.jpg" /></p>
+	</body>
+</html>
+
+<!--Comment at last line-->

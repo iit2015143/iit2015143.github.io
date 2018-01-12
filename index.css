@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin : 0px;
+    padding:0px;
+}
+@font-face {
+    font-family: goodfont;
+    src: url('goodfont.otf');
+}
+body{
+    font-family:goodfont, sans-serif;
+    background: linear-gradient(90deg,#fff,#015907);
+}
+header{
+    background: linear-gradient(90deg,#fff,#015907);
+    background-image: url('bgimage.jpeg');
+    background-size:100% 500px;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    padding:10%;
+}
+header>div{
+    width:200px;
+    height:200px;
+    background: red;
+    margin:auto;
+    border-radius:50%;
+    overflow: hidden;
+}
+header>div>img{
+    width:200px;
+    height:200px;
+}
+nav{
+    background: linear-gradient(90deg,#dee2de,#222322);
+    font-weight:bolder;
+}
+nav ul li{
+    display:inline-block;
+    width:20%;
+    padding:20px;
+    font-size: 20px;
+}
+
+nav ul li:hover{
+    color:white;
+    background-color: black;
+}
+
+article{
+    height:800px;
+    background-color:rgba(0,0,0,0.9);
+    margin:20px;
+}
+
+footer{
+    padding:40px;
+    background-color:rgba(0,0,0,0.9);
+    /*background: linear-gradient(90deg,#fff,#015907);*/
+    margin:20px;
+    font-size:0px;
+}
+
+footer section{
+    font-size:16px;
+    padding:40px;
+    width:33.33%;
+    display: inline-block;
+    border-left:2px dashed white;
+    border-left-style:dashed;
+}
