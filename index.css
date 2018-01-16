@@ -40,7 +40,7 @@ a{
 }
 
 header{
-    background: linear-gradient(90deg,#fff,#015907);
+    /*background: linear-gradient(90deg,#fff,#015907);*/
     background-image: url('bgimage.jpeg');
     background-size:100% 500px;
     background-repeat:no-repeat;
@@ -74,10 +74,12 @@ nav ul a li{
     font-size: 20px;
     text-align: center;
     color:black;
+    transition:background-color 0.5s;
 }
 
 nav ul li:hover{
     color:white;
+
     background-color: rgba(0,0,0,0.9);
 }
 
@@ -85,11 +87,26 @@ article{
 
     /*fix for margin-top in section*/
     border: 1px solid;
-    background-color:rgba(0,0,0,0.9);
+    background-color:rgba(0,0,0,0.8);
+
     margin:20px;
     box-shadow: -5px 5px 5px #222222;
     padding-bottom:80px;
     word-wrap: break-word;
+    position:relative;
+}
+
+article::before {
+  content: "";
+  background-image: url(ladyinblack.jpg);
+  background-attachment: fixed;
+  background-size:cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index:-1;
 }
 
 footer{
@@ -129,6 +146,7 @@ footer section{
     }
     header{
         background-image: url("mobilebg.jpg");
+        background-attachment:fixed;
     }
     footer section{
         display: block;
