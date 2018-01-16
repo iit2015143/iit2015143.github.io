@@ -35,6 +35,16 @@ p{
     font-size: 1.2em;
 }
 
+section ul{
+    color:white;
+    margin:auto;
+    padding-left:15%;
+}
+
+section ul li{
+    padding:6px;
+}
+
 a{
     text-decoration: none;
 }
@@ -127,6 +137,12 @@ footer section{
     border-left-style:dashed;
     box-shadow: -5px 5px 5px #222222;
     text-align: center;
+}
+
+.fa{
+    padding-left:5px;
+    color:white;
+    font-size:20px;
 }
 
 /* responsive to phones here */
