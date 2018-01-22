@@ -17,16 +17,11 @@
 
 		<nav>
 			<ul>
-				<a href="#about"><li>About<i class="fa fa-smile-o" aria-hidden="true"></i>
-</li></a><!--
-				--><a href="#contacts"><li>Contacts<i class="fa fa-smile-o" aria-hidden="true"></i>
-</li></a><!--
-				--><a href="#interests"><li>Interests<i class="fa fa-smile-o" aria-hidden="true"></i>
-</li></a><!--
-				--><a href="#skills"><li>Skills<i class="fa fa-smile-o" aria-hidden="true"></i>
-</li></a><!--
-				--><a href="#quotes"><li>Quotes<i class="fa fa-smile-o" aria-hidden="true"></i>
-</li></a>
+				<a href="#about"><li>About</li></a><!--
+				--><a href="#contacts"><li>Contacts</li></a><!--
+				--><a href="#interests"><li>Interests</li></a><!--
+				--><a href="#skills"><li>Skills</li></a><!--
+				--><a href="#quotes"><li>Quotes</li></a>
 			</ul>
 		</nav>
 		<article>
@@ -105,21 +100,36 @@
 			</section>
 		</article>
 
-		<footer>
+		<footer><section>
 			<section>
-				PRIYA
-			</section>
-			<section>
-				SINHA
-			</section>
-			<section>
-				I LOVE YOU
-			</section>
+				<div>A Github site developed in personal interest.</div>
+				<div>
+					<div id="catch">-- Catch me on --</div>
+					<div id="fontawesome"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<i class="fa fa-whatsapp" aria-hidden="true"></i>
+					</div>
+				</div>
+			</section></section>
+
 
 		</footer>
 
 	</body>
 	<script>
-		document.getElementById()
+		$(document).ready(function(){
+			$("i").css("opacity","0");
+			$("nav ul li").mouseover(function(){
+				$(this).children("i").animate({
+					"opacity":"1";
+				},100);
+				console.log($(this).children());
+			});
+			$("nav ul li").mouseout(function(){
+				$(this).children("i").animate({
+					"opacity":"0";
+				},100);
+			});
+		});
 	</script>
 </html>
