@@ -4,7 +4,20 @@
     src: url('goodfont.otf');
 }
 
+/*Google map processes*/
+#map {
+        height: 400px;
+        /*width: 100%;*/
+        margin:30px 130px;
+       }
+
+
 /* styles for page load*/
+pre{
+    color:white;
+    font-size: 20px;
+    padding:1% 10% 0% 10%;
+}
 #spanallpage{
     position:fixed;
     top:0px;
@@ -37,6 +50,7 @@
     text-align: center;
     width:100%;
     display:none;
+    cursor: grab;
 }
 
 line{
@@ -92,11 +106,18 @@ p{
 section ul{
     color:white;
     margin:auto;
-    padding-left:15%;
+    padding-left:10%;
+    list-style-type: none;
 }
 
 section ul li{
+    display: inline-block;
+    background-color:white;
+    color:black;
+    margin:20px;
     padding:6px;
+    border-top-right-radius: 10px;
+    /*border-bottom-left-radius:10px;*/
 }
 
 a{
@@ -253,4 +274,9 @@ footer section div{
         display: block;
         width:100%;
     }
+    #map {
+            height: 400px;
+            /*width: 100%;*/
+            margin:30px;
+           }
 }

@@ -8,3 +8,14 @@ window.onload = function(){
         });
     });
 };
+function initMap() {
+    var IIIT = {lat: 25.430416, lng: 81.770679};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: IIIT
+    });
+    var marker = new google.maps.Marker({
+      position: IIIT,
+      map: map
+    });
+}
