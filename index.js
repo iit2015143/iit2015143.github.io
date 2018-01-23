@@ -1,5 +1,4 @@
-
-$(document).ready(function(){
+window.onload = function(){
     $("#downbutton").show();
     $("#downbutton").click(function(){
         $("#spanallpage").slideUp();
@@ -8,4 +7,4 @@ $(document).ready(function(){
             overflow:'auto'
         });
     });
-});
+};
