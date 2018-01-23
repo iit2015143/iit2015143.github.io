@@ -29,6 +29,31 @@
     height:100px;
 }
 
+#downbutton{
+    position:fixed;
+    z-index : 1000;
+    font-size:100px;
+    bottom:0px;
+    text-align: center;
+    width:100%;
+    display:none;
+}
+
+line{
+    /*animation-name: myfirstanimation;
+    animation-duration:4s;*/
+    stroke:black;
+    stroke-dasharray:30;
+    animation: myfirstanimation 1s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myfirstanimation{
+    to{
+        stroke-dashoffset:59;
+    }
+}
+
 
 /* regular styles here*/
 *{

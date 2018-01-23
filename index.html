@@ -7,12 +7,23 @@
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <script src = "index.js"></script>
 	</head>
 	<body>
-		<div id="spanallpage">
-			<div><div>
-			<img src="Dragon.svg" height="200px"/></div>
+		<div id = "downbutton">
+			<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 		</div>
+		<div id="spanallpage">
+			<div>
+				<div>
+					<img src="Dragon.svg" height="200px" width = "200px"/><br/>
+					<svg height = "50px" width="200px">
+						<line stroke-linecap="round"
+          					x1="20" y1="20" x2="180" y2="20"
+          					stroke="black" stroke-width="15"/>
+					</svg>
+				</div>
+			</div>
 		</div>
 		<header>
 			<div>
@@ -121,20 +132,4 @@
 		</footer>
 
 	</body>
-	<script>
-		$(document).ready(function(){
-			$("i").css("opacity","0");
-			$("nav ul li").mouseover(function(){
-				$(this).children("i").animate({
-					"opacity":"1";
-				},100);
-				console.log($(this).children());
-			});
-			$("nav ul li").mouseout(function(){
-				$(this).children("i").animate({
-					"opacity":"0";
-				},100);
-			});
-		});
-	</script>
 </html>
