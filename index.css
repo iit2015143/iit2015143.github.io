@@ -4,12 +4,17 @@
     src: url('goodfont.otf');
 }
 
+@font-face{
+    font-family: ultrathin;
+    src: url('AdventPro-Thin.ttf');
+}
+
 /*Google map processes*/
 #map {
         height: 400px;
         /*width: 100%;*/
         margin:30px 130px;
-       }
+}
 
 
 /* styles for page load*/
@@ -103,6 +108,10 @@ p{
     font-size: 1.2em;
 }
 
+#quotes + p{
+    text-align: center;
+}
+
 section ul{
     color:white;
     margin:auto;
@@ -149,6 +158,7 @@ article section{
 }
 
 nav{
+    font-family: ultrathin, sans-serif;
     background: linear-gradient(90deg,#dee2de,#222322);
     font-weight:bolder;
     letter-spacing: 2px;
@@ -168,6 +178,11 @@ nav ul li:hover{
     background-color: rgba(0,0,0,0.9);
 }
 
+nav ul li:active{
+    color:white;
+    background-color: rgba(0,0,0,0.9);
+}
+
 article{
 
     /*fix for margin-top in section*/
@@ -179,6 +194,7 @@ article{
     padding-bottom:80px;
     word-wrap: break-word;
     position:relative;
+    letter-spacing: 2px;
 }
 
 article::before {
