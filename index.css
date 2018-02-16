@@ -267,7 +267,9 @@ footer section div{
     header{
         background-image: url("mobilebg.jpg");
     }
-
+    nav ul a li{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -279,8 +281,8 @@ footer section div{
     article{
         background-color: black;
     }
-    nav{
-        display:none;
+    nav ul a li{
+        font-size: 10px;
     }
     header{
         background-image: url("mobilebg.jpg");
