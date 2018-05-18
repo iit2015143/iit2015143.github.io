@@ -1,0 +1,42 @@
+*{
+  margin: 0px;
+  padding:0px;
+  }
+body{
+  text-align: center;
+  margin: 10px;
+  background-color: black;
+  color:white;
+  font-size: 80px;
+  font-family: monospace;
+
+}
+.container{
+  border-radius: 5px;
+  display: inline-block;
+  background: #000;
+}
+.col{
+  display: inline-block;
+  display: table-cell;
+  height: 80px;
+  width:90px;
+  background: grey;
+  vertical-align: middle;
+  margin-left: 5px;
+  border: 1px solid white;
+  color: pink;
+  font-weight: bolder;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.row{
+  margin: 0px;
+}
+#particles-js{
+  position: fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+}
